@@ -50,9 +50,9 @@ public class UserDatabase {
            if(rs.next()){
                user = new User();
                user.setId(rs.getInt("id"));
-               user.setName("name");
-               user.setEmail("email");
-               user.setPassword("password");
+               user.setName(rs.getString("name"));
+               user.setEmail(rs.getString("email"));
+               user.setPassword(rs.getString("password"));
            }
            
        }
